@@ -6,23 +6,21 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import pages.CalculadoraDeJurosCompostos;
-import resources.SeleniumUtils;
+import pages.PageCalculadoraDeJurosCompostos;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class TestCalculadoraDeJurosCompostos {
     private WebDriver driver = null;
-    private CalculadoraDeJurosCompostos pageCalculadoraDeJurosCompostos = null;
+    private PageCalculadoraDeJurosCompostos pageCalculadoraDeJurosCompostos = null;
 
     @Before
     public void setUp() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        pageCalculadoraDeJurosCompostos = new CalculadoraDeJurosCompostos(driver);
+        pageCalculadoraDeJurosCompostos = new PageCalculadoraDeJurosCompostos(driver);
     }
 
     @After

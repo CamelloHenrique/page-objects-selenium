@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import resources.SeleniumUtils;
 
-public class CalculadoraDeJurosCompostos {
+public class PageCalculadoraDeJurosCompostos {
     private WebDriver driver;
     private LocatorsByCalculadoraDeJurosCompostos locatorsBy;
 
@@ -16,7 +16,7 @@ public class CalculadoraDeJurosCompostos {
     private By totalFinal = locatorsBy.TOTAL_FINAL.getBy();
     private By totalInvestido = locatorsBy.TOTAL_INVESTIDO.getBy();
     private By totalJuros = locatorsBy.TOTAL_JUROS.getBy();
-    public CalculadoraDeJurosCompostos(WebDriver driver) {
+    public PageCalculadoraDeJurosCompostos(WebDriver driver) {
         this.driver = driver;
         System.out.println(">>>>>>>>>>>>>>>>>>"+driver.getTitle());
     }
